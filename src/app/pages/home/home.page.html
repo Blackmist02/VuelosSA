@@ -1,9 +1,9 @@
 <!-- home.page.html -->
 
 <ion-content>
-  <div>
-    <h1>VueloSur</h1>
-  </div>
+  <div class="prueba">
+    <img class="avion" src="assets/imagenes/newTitle.png" alt="VueloSur">
+    </div>
   <div>
     <p>{{ getTime() }}</p>
   </div>
@@ -17,10 +17,38 @@
       </ion-col>
     </ion-row>
   </div>
-  <div class="container">
-    <h1>¡Descubre el mundo desde las alturas!</h1>
-    <p>En VuelosSA te ofrecemos una experiencia única de viaje en avión.</p>
-    <p>Explora nuestros destinos, reserva tu vuelo y disfruta de un viaje inolvidable.</p>
+  <div padding>
+    <form>
+      <ion-item>
+        <ion-label position="floating">Ciudad de Origen</ion-label>
+        <ion-input type="text" placeholder="Ciudad de Origen"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Ciudad de Destino</ion-label>
+        <ion-input type="text" placeholder="Ciudad de Destino"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Fecha de Salida</ion-label>
+        <ion-input type="date" placeholder="Fecha de Salida"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Fecha de Regreso</ion-label>
+        <ion-input type="date" placeholder="Fecha de Regreso"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Número de Pasajeros</ion-label>
+        <ion-input type="number" placeholder="Número de Pasajeros"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Clase</ion-label>
+        <ion-select placeholder="Clase">
+          <ion-select-option value="economica">Económica</ion-select-option>
+          <ion-select-option value="ejecutiva">Ejecutiva</ion-select-option>
+          <ion-select-option value="primera">Primera</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button expand="block">Buscar Vuelos</ion-button>
+    </form>
   </div>
 </ion-content>
 
