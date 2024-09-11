@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular'; // Para mostrar alertas
 
 @Component({
@@ -14,7 +15,7 @@ export class RecuperarContraseniaPage implements OnInit {
   loginVerificarContrasenia: string = '';  // Para confirmar la nueva contraseña
   usuarios: any[] = [];  // Almacena los usuarios del JSON
 
-  constructor(private http: HttpClient, private alertController: AlertController) { }
+  constructor(private http: HttpClient, private alertController: AlertController, private router: Router ) { }
 
   ngOnInit() {
     this.cargarUsuarios();
@@ -47,6 +48,7 @@ export class RecuperarContraseniaPage implements OnInit {
       usuario.contrasenia = this.logincontrasenia;
       console.log('Contraseña cambiada', usuario);
       this.mostrarAlerta('Éxito', 'La contraseña ha sido cambiada correctamente');
+      this.router.navigate(['/login']);
     } else {
       this.mostrarAlerta('Error', 'Usuario no encontrado');
     }

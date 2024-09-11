@@ -86,3 +86,26 @@ ion-item{
     --margin-top: 10px;
     --margin-bottom: 10px;
 }
+
+@keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(500%);
+    }
+  }
+  
+.slider-container {
+    overflow: hidden; /* Oculta el texto que está fuera del contenedor */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+  }
+.slider {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideRight 5s linear infinite;
+    font-size: 1.5rem; /* Tamaño de fuente ajustable */
+    color: #000; /* Color de texto ajustable */
+    overflow: hidden; /* Oculta el texto que se encuentra fuera del contenedor */
+  }
+  
