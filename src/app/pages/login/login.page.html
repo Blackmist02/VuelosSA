@@ -1,8 +1,8 @@
 <ion-content [fullscreen]="true">
-  <img class="avion" src="assets/imagenes/avion.png" alt="VueloSur" width="501" height="496" style="flex-shrink: 0;">
-  <ion-title>VueloSur</ion-title>
-  <img src="assets/imagenes/image.png" alt="VueloSur" width="50" height="50">
-  
+  <div class="prueba">
+  <img class="avion" src="assets/imagenes/Group 2.png" alt="VueloSur">
+  </div>
+  <div class="boxLog">
   <ion-grid>
     <!-- Login, nombre de usuario -->
     <ion-row class="ion-justify-content-center ">
@@ -22,13 +22,13 @@
       </ion-col>
     </ion-row>
     <ion-row class="ion-justify-content-center">
-    <ion-router-link  routerLink="/recuperar-contraseña">Recuperar Contraseña</ion-router-link> 
+    <ion-router-link routerLink="/recuperar-contrasenia" style="margin-top:10px; margin-bottom:10px">¿Olvidaste tu contraseña?</ion-router-link> 
   </ion-row>
     <ion-row class="ion-justify-content-center">
-      <ion-col size="4" >
-        <ion-button expand="block">INGRESAR</ion-button>
+      <ion-col size="4">
+        <ion-button expand="block" routerLink="/home" >INGRESAR</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <img class="nubes" src="assets/imagenes/nubes.png" />
+</div>
 </ion-content>

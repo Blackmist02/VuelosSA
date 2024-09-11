@@ -1,13 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>RecuperarContrasenia</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">RecuperarContrasenia</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true">  
+  
+  <div class="prueba">
+    <img class="avion" src="assets/imagenes/titulo.png" alt="VueloSur">
+  </div>
+  <ion-grid>
+    <!-- Login, nombre de usuario -->
+      <ion-row class="ion-text-align-center">
+        <ion-col  class="ion-text-center">
+          <p class="ion-text-center">Recuperación de Contraseña</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center ">
+      <ion-col size="11">
+        <ion-item class="nombre_user">
+          <ion-label position="floating" > <ion-icon name="person-outline" [(ngModel)]="loginusuario"></ion-icon> Nombre de Usuario</ion-label>
+          <ion-input type="user" ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" >
+        <ion-item>
+          <ion-label position="floating"><ion-icon name="key-outline" [(ngModel)]="logincontrasenia"></ion-icon> Ingresar Nueva Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" >
+        <ion-item>
+          <ion-label position="floating"><ion-icon name="key-outline" [(ngModel)]="loginVerificarContrasenia"></ion-icon> Confirmar Nueva Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="9">
+        <ion-button expand="block" (click)="cambiaContrasenia()">CAMBIAR CONTRASEÑA</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <img class="nubes" src="assets/imagenes/nubesAvion.png" />
 </ion-content>

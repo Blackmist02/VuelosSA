@@ -10,6 +10,13 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // Your code here
+  }
+
+  //funcion que devuelve la hora actual y que este se actualice cada segundo
+  
+  getTime() {
+    return new Date().toLocaleTimeString();
   }
 
 }

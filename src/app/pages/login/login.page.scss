@@ -39,19 +39,6 @@ ion-item{
     --border-radius: 13px;
 }
 
-.nubes{
-    --background: url('../../../assets/imagenes/nubes.png') no-repeat;
-    --background-size: cover;
-    --background-position: center;
-    --height: 142px;
-    --width: 141px;
-    --position: absolute;
-    --top: 176px;
-    --left: 173px;
-    --object-fit: cover;
-
-}
-
 .avion{
     --background: url('../../../assets/imagenes/avion.png');
     --height: 496px;
@@ -60,4 +47,29 @@ ion-item{
     --position: relative;
     --overflow: hidden;
     --o-object-fit: cover;
+    
+}
+@media screen and (min-width: 768px) {
+    .boxLog{
+        padding-left:33% ;
+        padding-right: 33%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .boxLog{
+        padding-left:20%;
+        padding-right: 20%;
+    }
+
+
+}   
+
+@media screen and (max-width: 499px) {
+}
+
+.prueba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
