@@ -92,7 +92,7 @@ ion-item{
       transform: translateX(-100%);
     }
     100% {
-      transform: translateX(500%);
+      transform: translateX(200%);
     }
   }
   
@@ -103,7 +103,7 @@ ion-item{
 .slider {
     display: inline-block;
     white-space: nowrap;
-    animation: slideRight 5s linear infinite;
+    animation: slideRight 7s linear infinite;
     font-size: 1.5rem; /* Tamaño de fuente ajustable */
     color: #000; /* Color de texto ajustable */
     overflow: hidden; /* Oculta el texto que se encuentra fuera del contenedor */

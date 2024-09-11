@@ -8,9 +8,15 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
+  loginUser: string = "";
+  loginPassword: string = "";
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  login(){
+    this.router.navigate(['/home'],{state:{usuario:this.loginUser, contrasenia:this.loginPassword}});
   }
 
   recuperarContrasenia() {

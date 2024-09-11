@@ -9,7 +9,7 @@
       <ion-col size="11">
         <ion-item class="nombre_user">
           <ion-label position="floating" > <ion-icon name="person-outline"></ion-icon> Nombre de Usuario</ion-label>
-          <ion-input type="user" ></ion-input>
+          <ion-input type="user" [(ngModel)]="loginUser"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -17,7 +17,7 @@
       <ion-col size="11" >
         <ion-item>
           <ion-label position="floating"><ion-icon name="key-outline"></ion-icon> Contraseña</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="loginPassword"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -26,7 +26,7 @@
   </ion-row>
     <ion-row class="ion-justify-content-center">
       <ion-col size="4">
-        <ion-button expand="block" routerLink="/home" >INGRESAR</ion-button>
+        <ion-button expand="block" (click)="login()" >INGRESAR</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
